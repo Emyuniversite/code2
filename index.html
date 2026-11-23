@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes recettes pour tous les jours</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+
+    <nav class="top-navbar">
+        <div class="nav-container">
+            <a href="#accueil" class="brand">
+                <span class="brand-name">Mes recettes pour tous les jours</span>
+                <span class="brand-slogan">La bonne cuisine du quotidien, prête en moins de 20 minutes.</span>
+            </a>
+            <div class="top-links">
+                <a href="#accueil">Accueil</a>
+                <a href="#recettes">Boissons</a>
+                <a href="#recettes">Desserts</a>
+                <a href="#recettes">Plats salés</a>
+                <a href="#qui-sommes-nous">Qui sommes-nous</a>
+                <a href="galerie.html" class="nav-pill">Galerie photos</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-wrapper">
+
+        <!-- 1. PAGE DE COUVERTURE -->
+        <section id="accueil" class="hero-card">
+            <div class="hero-tag">Zéro prise de tête en cuisine</div>
+            <h1>Bien manger, vite et sans se compliquer la vie.</h1>
+            <p class="hero-subtitle">
+                Découvrez des recettes artisanales, simples, rapides, faciles à faire et goûteuses avec les ingrédients que vous avez déjà dans vos placards. Moins de temps derrière les fourneaux, plus de temps pour vous.
+            </p>
+
+            <form class="search-box" action="#recettes">
+                <input type="text" placeholder="Un ingrédient, une envie ? (ex : pâtes, citron, café...)">
+                <button type="submit">Rechercher</button>
+            </form>
+
+            <div class="hero-actions">
+                <a href="#recettes" class="btn-primary">Explorer les recettes</a>
+                <a href="galerie.html" class="btn-secondary">Voir toutes les photos des plats</a>
+            </div>
+
+            <div class="reassurance-grid">
+                <div class="reassurance-item">
+                    <strong>15 min chrono</strong>
+                    <span>Des préparations pensées pour les soirs de semaine pressés.</span>
+                </div>
+                <div class="reassurance-item">
+                    <strong>5 ingrédients max</strong>
+                    <span>Pas de listes de courses interminables ni de produits introuvables.</span>
+                </div>
+                <div class="reassurance-item">
+                    <strong>Zéro niveau requis</strong>
+                    <span>Des étapes claires et inratables même pour les grands débutants.</span>
+                </div>
+                <div class="reassurance-item">
+                    <strong>Petit budget</strong>
+                    <span>Des plats savoureux qui respectent votre porte-monnaie.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. ACCÈS RAPIDE AUXkjlh3 CATÉGORIES -->
+        <section class="quick-categories">
+            <h2>Nos 3 catégories du quotidien</h2>
+            <div class="cat-cards">
+                <a href="#recettes" class="cat-card">
+                    <h3>Boissons (3 recettes)</h3>
+                    <p>Cafés glacés, chocolats chauds et smoothies maison prêts en 5 minutes.</p>
+                </a>
+                <a href="#recettes" class="cat-card">
+                    <h3>Desserts (3 recettes)</h3>
+                    <p>Douceurs rapides, compotes maison, verrines et gâteaux moelleux.</p>
+                </a>
+                <a href="#recettes" class="cat-card">
+                    <h3>Plats salés (3 recettes)</h3>
+                    <p>Recettes express, crémeuses et goûteuses pour un repas réussi.</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- 3. LES RECETTES PAR CATÉGORIE -->
+        <section id="recettes" class="main-card">
+            <div class="section-intro">
+                <div class="logo-badge">Fiches recettes détaillées</div>
+                <h2>Choisissez votre catégorie</h2>
+            </div>
+
+            <input type="radio" id="tab-boissons" name="tab-group" checked>
+            <input type="radio" id="tab-desserts" name="tab-group">
+            <input type="radio" id="tab-sales" name="tab-group">
+
+            <div class="nav-tabs">
+                <label for="tab-boissons" class="tab-button">Boissons</label>
+                <label for="tab-desserts" class="tab-button">Desserts</label>
+                <label for="tab-sales" class="tab-button">Plats salés</label>
+            </div>
+
+            <div class="tab-content-container">
+
+                <!-- CATÉGORIE 1 : BOISSONS -->
+                <div class="content content-boissons">
+                    <div id="recette-cafe-glace" class="recipe-card">
+                        <div class="recipe-header">
+                            <h3>Café glacé vanille-lait</h3>
+                            <div class="header-actions">
+                                <a href="galerie.html#img-cafe" class="photo-link">Voir la photo</a>
+                                <span class="badge">5 min</span>
+                            </div>
+                        </div>
+                        <p class="recipe-desc">Une boisson fraîche, douce et artisanale, idéale pour une pause rapide.</p>
+                        <div class="recipe-meta">
+                            <span>Préparation : 5 min</span>
+                            <span>Difficulté : Très facile</span>
+                            <span>Budget : €</span>
+                        </div>
+                        <div class="recipe-section">
+                            <h4>Ingrédients (1 verre)</h4>
+                            <div class="ingredients">
+                                <span class="tag">1 expresso ou 100 ml de café fort refroidi</span>
+                                <span class="tag">150 ml de lait froid</span>
+                                <span class="tag">1 c. à café d'extrait de vanille</span>
+                                <span class="tag">Glaçons</span>
+                            </div>
+                        </div>
+                        <div class="recipe-section">
+                            <h4>Préparation</h4>
+                            <ol class="instructions">
+                                <li>Remplissez un grand verre de glaçons.</li>
+                                <li>Versez le lait froid et la vanille.</li>
+                                <li>Ajoutez le café par-dessus, mélangez et servez aussitôt.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div id="recette-chocolat-chaud" class="recipe-card">
+                        <div class="recipe-header">
+                            <h3>Chocolat chaud crémeux à la cannelle</h3>
+                            <div class="header-actions">
+                                <a href="galerie.html#img-chocolat" class="photo-link">Voir la photo</a>
+                                <span class="badge">8 min</span>
+                            </div>
+                        </div>
+                        <p class="recipe-desc">Un chocolat chaud maison réconfortant et parfumé, prêt en quelques minutes.</p>
+                        <div class="recipe-meta">
+                            <span>Préparation : 3 min</span>
+                            <span>Cuisson : 5 min</span>
+                            <span>Difficulté : Très facile</span>
+                            <span>Budget : €</span>
+                        </div>
+                        <div class="recipe-section">
+                            <h4>Ingrédients (1 tasse)</h4>
+                            <div class="ingredients">
+                                <span class="tag">250 ml de lait</span>
+                                <span class="tag">40 g de chocolat noir ou au lait</span>
+                                <span class="tag">1 c. à café de sucre (facultatif)</span>
+                                <span class="tag">1 pincée de cannelle</span>
+                            </div>
+                        </div>
+                        <div class="recipe-section">
+                            <h4>Préparation</h4>
+                            <ol class="instructions">
+                                <li>Faites chauffer le lait dans une petite casserole à feu doux.</li>
+                                <li>Ajoutez le chocolat coupé en morceaux et remuez jusqu'à ce qu'il soit bien fondu.</li>
+                                <li>Ajoutez le sucre et la cannelle, fouettez rapidement et versez dans une tasse.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div id="recette-smoothie-banane" class="recipe-card">
+                        <div class="recipe-header">
+                            <h3>Smoothie onctueux banane, avoine et miel</h3>
+                            <div class="header-actions">
+                                <a href="galerie.html#img-smoothie" class="photo-link">Voir la photo</a>
+                                <span class="badge">5 min</span>
+                            </div>
+                        </div>
+                        <p class="recipe-desc">Un smoothie nourrissant et velouté pour le petit-déjeuner ou le goûter.</p>
+                        <div class="recipe-meta">
+                            <span>Préparation : 5 min</span>
+                            <span>Difficulté : Très facile</span>
+                            <span>Budget : €</span>
+                        </div>
+                        <div class="recipe-section">
+                            <h4>Ingrédients (1 grand verre)</h4>
+                            <div class="ingredients">
+                                <span class="tag">1 banane bien mûre</span>
+                                <span class="tag">200 ml de lait (vache ou amande)</span>
+                                <span class="tag">2 c. à soupe de flocons d'avoine</span>
+                                <span class="tag">1 c. à café de miel</span>
+                            </div>
+                        </div>
+                        <div class="recipe-section">
+                            <h4>Préparation</h4>
+                            <ol class="instructions">
+                                <li>Coupez la banane en rondelles et placez-la dans un mixeur.</li>
+                                <li>Ajoutez le lait, les flocons d'avoine et le miel.</li>
+                                <li>Mixez pendant 30 secondes jusqu'à obtenir une texture bien lisse et servez frais.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CATÉGORIE 2 : DESSERTS -->
+                <div class="content content-desserts">
+                    <div id="recette-compote" class="recipe-card">
+                        <div class="recipe-header">
+                            <h3>Compote de pommes artisanale express</h3>
+                            <div class="header-actions">
+                                <a href="galerie.html#img-compote" class="photo-link">Voir la photo</a>
+                                <span class="badge">15 min</span>
+                            </div>
+                        </div>
+                        <p class="recipe-desc">Un dessert maison simple, léger et naturellement goûteux.</p>
+                        <div class="recipe-meta">
+                            <span>Préparation : 5 min</span>
+                            <span>Cuisson : 10 min</span>
+                            <span>Difficulté : Très facile</span>
+                            <span>Budget : €</span>
+                        </div>
+                        <div class="recipe-section">
+                            <h4>Ingrédients (2 bols)</h4>
+                            <div class="ingredients">
+                                <span class="tag">4 pommes</span>
+                                <span class="tag">3 c. à soupe d'eau</span>
+                                <span class="tag">1 c. à soupe de sucre ou miel</span>
+                                <span class="tag">1/2 sachet de sucre vanillé</span>
+                            </div>
+                        </div>
+                        <div class="recipe-section">
+                            <h4>Préparation</h4>
+                            <ol class="instructions">
+                                <li>Épluchez les pommes, retirez le cœur et coupez-les en petits dés.</li>
+                                <li>Mettez-les dans une casserole avec l'eau, le sucre et le sucre vanillé.</li>
+                                <li>Couvrez et laissez cuire 10 à 12 minutes à feu doux en remuant, puis écrasez à la fourchette.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div id="recette-gateau-yaourt" class="recipe-card">
+                        <div class="recipe-header">
+                            <h3>Gâteau fondant au yaourt</h3>
+                            <div class="header-actions">
+                                <a href="galerie.html#img-gateau" class="photo-link">Voir la photo</a>
+                                <span class="badge">35 min</span>
+                            </div>
+                        </div>
+                        <p class="recipe-desc">Le grand classique facile à mesurer avec un simple pot de yaourt.</p>
+                        <div class="recipe-meta">
+                            <span>Préparation : 10 min</span>
+                            <span>Cuisson : 25 min</span>
+                            <span>Difficulté : Très facile</span>
+                            <span>Budget : €</span>
+                        </div>
+                        <div class="recipe-section">
+                            <h4>Ingrédients (4 à 6 parts)</h4>
+                            <div class="ingredients">
+                                <span class="tag">1 pot de yaourt nature</span>
+                                <span class="tag">2 pots de sucre</span>
+                                <span class="tag">3 pots de farine</span>
+                                <span class="tag">1/2 pot d'huile neutre</span>
+                                <span class="tag">2 œufs</span>
+                                <span class="tag">1/2 sachet de levure chimique</span>
+                            </div>
+                        </div>
+                        <div class="recipe-section">
+                            <h4>Préparation</h4>
+                            <ol class="instructions">
+                                <li>Préchauffez le four à 180°C et graissez un moule.</li>
+                                <li>Mélangez le yaourt, les œufs et le sucre, puis incorporez l'huile, la farine et la levure.</li>
+                                <li>Versez dans le moule et faites cuire environ 25 minutes jusqu'à ce que le gâteau soit doré.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div id="recette-verrine-biscuit" class="recipe-card">
+                        <div class="recipe-header">
+                            <h3>Verrine crémeuse spéculoos et fromage blanc</h3>
+                            <div class="header-actions">
+                                <a href="galerie.html#img-verrine" class="photo-link">Voir la photo</a>
+                                <span class="badge">5 min</span>
+                            </div>
+                        </div>
+                        <p class="recipe-desc">Un dessert sans cuisson prêt en un clin d'œil, croquant et onctueux.</p>
+                        <div class="recipe-meta">
+                            <span>Préparation : 5 min</span>
+                            <span>Cuisson : Aucune</span>
+                            <span>Difficulté : Très facile</span>
+                            <span>Budget : €</span>
+                        </div>
+                        <div class="recipe-section">
+                            <h4>Ingrédients (2 verrines)</h4>
+                            <div class="ingredients">
+                                <span class="tag">200 g de fromage blanc ou yaourt grec</span>
+                                <span class="tag">6 biscuits spéculoos</span>
+                                <span class="tag">1 c. à soupe de miel ou sucre roux</span>
+                                <span class="tag">1 pincée de vanille</span>
+                            </div>
+                        </div>
+                        <div class="recipe-section">
+                            <h4>Préparation</h4>
+                            <ol class="instructions">
+                                <li>Mélangez le fromage blanc avec le miel et la vanille.</li>
+                                <li>Émiettez grossièrement les biscuits spéculoos.</li>
+                                <li>Alternez une couche de biscuits et une couche de crème dans deux verres et dégustez frais.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CATÉGORIE 3 : PLATS SALÉS -->
+                <div class="content content-sales">
+                    <div id="recette-pates-citron" class="recipe-card">
+                        <div class="recipe-header">
+                            <h3>Pâtes crémeuses au citron, ail et parmesan</h3>
+                            <div class="header-actions">
+                                <a href="galerie.html#img-pates" class="photo-link">Voir la photo</a>
+                                <span class="badge">15 min</span>
+                            </div>
+                        </div>
+                        <p class="recipe-desc">Le plat réconfortant par excellence : onctueux, frais et prêt pendant que l'eau des pâtes bout.</p>
+                        <div class="recipe-meta">
+                            <span>Préparation : 5 min</span>
+                            <span>Cuisson : 10 min</span>
+                            <span>Difficulté : Très facile</span>
+                            <span>Budget : € (Bon marché)</span>
+                        </div>
+                        <div class="recipe-section">
+                            <h4>Ingrédients (pour 2 personnes)</h4>
+                            <div class="ingredients">
+                                <span class="tag">200 g de spaghetti ou linguine</span>
+                                <span class="tag">1 citron jaune non traité (zeste + jus)</span>
+                                <span class="tag">15 cl de crème liquide entière</span>
+                                <span class="tag">40 g de parmesan râpé</span>
+                                <span class="tag">1 gousse d'ail</span>
+                                <span class="tag">1 filet d'huile d'olive, sel, poivre noir</span>
+                            </div>
+                        </div>
+                        <div class="recipe-section">
+                            <h4>Préparation</h4>
+                            <ol class="instructions">
+                                <li><strong>Cuire les pâtes :</strong> Faites bouillir un grand volume d'eau salée et plongez-y les pâtes selon le temps indiqué sur le paquet. Gardez une demi-louche d'eau de cuisson avant d'égoutter.</li>
+                                <li><strong>Préparer la sauce :</strong> Pendant ce temps, faites revenir l'ail haché 1 minute dans une grande poêle avec l'huile d'olive à feu doux. Versez la crème, le zeste et le jus du citron. Laissez frémir 2 minutes.</li>
+                                <li><strong>Assembler :</strong> Versez les pâtes égouttées directement dans la poêle avec le parmesan et l'eau de cuisson réservée. Mélangez vivement 1 minute pour lier la sauce. Servez aussitôt avec du poivre concassé.</li>
+                            </ol>
+                        </div>
+                        <div class="recipe-tip">
+                            <strong>L'astuce du chef :</strong> Ajoutez une poignée de jeunes pousses d'épinards juste avant de servir : elles fondent en 30 secondes dans la chaleur des pâtes pour un plat complet !
+                        </div>
+                    </div>
+
+                    <div id="recette-omelette" class="recipe-card">
+                        <div class="recipe-header">
+                            <h3>Omelette dorée aux herbes et fromage</h3>
+                            <div class="header-actions">
+                                <a href="galerie.html#img-omelette" class="photo-link">Voir la photo</a>
+                                <span class="badge">10 min</span>
+                            </div>
+                        </div>
+                        <p class="recipe-desc">Une recette express, artisanale et économique, parfaite avec une salade verte.</p>
+                        <div class="recipe-meta">
+                            <span>Préparation : 4 min</span>
+                            <span>Cuisson : 6 min</span>
+                            <span>Difficulté : Très facile</span>
+                            <span>Budget : €</span>
+                        </div>
+                        <div class="recipe-section">
+                            <h4>Ingrédients (1 à 2 personnes)</h4>
+                            <div class="ingredients">
+                                <span class="tag">3 œufs</span>
+                                <span class="tag">40 g de fromage râpé ou en dés</span>
+                                <span class="tag">1 noisette de beurre</span>
+                                <span class="tag">Persil ou ciboulette</span>
+                                <span class="tag">Sel et poivre</span>
+                            </div>
+                        </div>
+                        <div class="recipe-section">
+                            <h4>Préparation</h4>
+                            <ol class="instructions">
+                                <li>Battez les œufs dans un bol avec le sel, le poivre et les herbes ciselées.</li>
+                                <li>Faites fondre le beurre dans une poêle à feu moyen, puis versez les œufs battus.</li>
+                                <li>Parsemez de fromage quand le dessus est encore légèrement moelleux, pliez l'omelette en deux et servez aussitôt.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div id="recette-tartine" class="recipe-card">
+                        <div class="recipe-header">
+                            <h3>Tartine grillée chèvre chaud, miel et noix</h3>
+                            <div class="header-actions">
+                                <a href="galerie.html#img-tartine" class="photo-link">Voir la photo</a>
+                                <span class="badge">10 min</span>
+                            </div>
+                        </div>
+                        <p class="recipe-desc">Une tartine croustillante et généreuse, prête en quelques minutes au four ou au grille-pain.</p>
+                        <div class="recipe-meta">
+                            <span>Préparation : 4 min</span>
+                            <span>Cuisson : 6 min</span>
+                            <span>Difficulté : Très facile</span>
+                            <span>Budget : €</span>
+                        </div>
+                        <div class="recipe-section">
+                            <h4>Ingrédients (2 tartines)</h4>
+                            <div class="ingredients">
+                                <span class="tag">2 belles tranches de pain de campagne</span>
+                                <span class="tag">4 rondelles de fromage de chèvre</span>
+                                <span class="tag">2 c. à café de miel</span>
+                                <span class="tag">Quelques cerneaux de noix</span>
+                                <span class="tag">1 pincée de thym ou poivre</span>
+                            </div>
+                        </div>
+                        <div class="recipe-section">
+                            <h4>Préparation</h4>
+                            <ol class="instructions">
+                                <li>Déposez les rondelles de fromage de chèvre sur les tranches de pain de campagne.</li>
+                                <li>Passez-les 5 à 6 minutes sous le gril du four jusqu'à ce que le fromage soit doré et fondant.</li>
+                                <li>Ajoutez un filet de miel, les noix concassées et un tour de moulin à poivre avant de servir avec une salade.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. QUI SOMMES-NOUS -->
+        <section id="qui-sommes-nous" class="about-card">
+            <div class="logo-badge">Qui sommes-nous ?</div>
+            <h2>Pourquoi « Mes recettes pour tous les jours » ?</h2>
+            <p>
+                Parce que rentrer tard du travail ou gérer le rythme de la famille ne devrait jamais obliger à se rabattre sur des plats industriels. Chez <strong>Mes recettes pour tous les jours</strong>, nous défendons une cuisine artisanale, simple, rapide, facile à faire et surtout goûteuse.
+            </p>
+            <p>
+                Nous croyons qu'il suffit de quelques bons produits de base, d'un peu d'astuce et d'un quart d'heure pour cuisiner maison. Chaque recette est pensée pour aller à l'essentiel : des techniques simples, pas d'ustensiles complexes, et toujours un maximum de gourmandise.
+            </p>
+        </section>
+
+        <!-- 5. NEWSLETTER -->
+        <section class="newsletter-card">
+            <h2>En panne d'inspiration pour ce soir ?</h2>
+            <p>Recevez chaque jeudi soir 5 idées de recettes express + la liste de courses associée directement dans votre boîte mail. 100 % gratuit, zéro spam.</p>
+            <form class="newsletter-form" action="#accueil">
+                <input type="email" placeholder="Votre adresse e-mail" required>
+                <button type="submit">Je m'abonne gratuitement</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- 6. PIED DE PAGE -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Mes recettes pour tous les jours</h3>
+                <p>Le site de référence pour une cuisine artisanale, simple, saine, goûteuse et rapide au quotidien.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#recettes">Toutes les recettes</a></li>
+                    <li><a href="galerie.html">Galerie photos</a></li>
+                    <li><a href="#qui-sommes-nous">Qui sommes-nous</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Légal & Contact</h4>
+                <ul>
+                    <li><a href="#accueil">Mentions légales</a></li>
+                    <li><a href="#accueil">Politique de confidentialité</a></li>
+                    <li><a href="#accueil">Nous contacter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 Mes recettes pour tous les jours — Fait avec passion et une spatule en bois.
+        </div>
+    </footer>
+
+</body>
+</html>
